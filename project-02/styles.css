@@ -2,11 +2,14 @@ body{
     background-color: #fff105;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: url('cursor-01.svg'), default;
 }
+
+
 .LET-ME-INTRODUCT-MYSELF {
-    width: 1500px;
-    height: 133px;
-    font-size: 127px;
+    width: 1550px;
+    height: 120px;
+    font-size: 100px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -14,13 +17,13 @@ body{
     letter-spacing: normal;
     text-align: left;
     color: #000000;
-    margin: 63px 77px 0px 52px;
+    margin: 10px 60px 0px 10px;
 }
 
 .CHATBOT-ABOUT-ME {
     /* width: 528px; */
     height: 54px;
-    margin: 0px 77px 0px 52px;
+    margin: 0px 40px 0px 10px;
     font-size: 48px;
     font-weight: normal;
     font-stretch: normal;
@@ -42,8 +45,8 @@ body{
 }
 .start-btn{
     display: inline-block;
-    width: 280px;
-    height: 280px;
+    width: 200px;
+    height: 200px;
     border: solid 3px #000000;
     background-color: #ffffff;
     text-align: center;
@@ -56,11 +59,11 @@ button{
     color: #000;
     outline: none;
     border: none;
-    font-size: 66px;
+    font-size: 50px;
     letter-spacing: 1px;
     cursor: pointer;
-    width: 280px;
-    height: 280px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
 }
 a{
