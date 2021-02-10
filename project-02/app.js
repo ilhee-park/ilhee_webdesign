@@ -15,7 +15,7 @@ input.addEventListener('keyup', (e) => {
         document.getElementById("nextBtn").style.visibility="visible";//다음버튼 활성화
         document.querySelector('input').value = e.target.value;//답변은 질문으로 초기화
         document.querySelector('input').style.fontFamily = "chatbot_ilhee_finalfinal-Regular"; 
-        console.log('플래그 체크!!', enter_flag);
+        console.log('플래그 체크', enter_flag);
 
         //prev-question배열에 저장
         previous_questions_lists.push({
@@ -25,7 +25,7 @@ input.addEventListener('keyup', (e) => {
         });
         console.log("previously asked questions are : ", previous_questions_lists);
     }
-    else{//엔터한번만허용하게끔 예외처리
+    else{//엔터한번만허용하게 예외처리
         document.querySelector('input').style.fontFamily = "Poppins";
         return;
     }
@@ -75,7 +75,7 @@ function UpdateQuestionNumbers(previous_questions_lists){//질문번호 초기�
 
 //마지막list의 요소 key-value만 보여준다.
 function appendPrevQuestions(previous_questions_lists){
-    //히스토리로 가져온다.
+    //히스토리로 가져옴
     var list_length = previous_questions_lists.length - 1;
     var temp_key_num = previous_questions_lists[list_length].key_num;
     var temp_key = previous_questions_lists[list_length].key;
