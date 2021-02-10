@@ -87,7 +87,7 @@ button:active{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .vertical-align .key-lists ul{
