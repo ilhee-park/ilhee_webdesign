@@ -87,7 +87,7 @@ button:active{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .vertical-align .key-lists ul{
@@ -102,7 +102,6 @@ button:active{
     font-size: 15px;
 }
 
-/* 여기를 알아서 바꾸면됨 */
 .vertical-align .key-lists li:not(:last-child){ 
     margin-right: 220px;
 }
