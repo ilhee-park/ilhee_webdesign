@@ -18,7 +18,7 @@ body{
     flex-direction: column;
     align-items: stretch;
     border-color: #000000;    
-    border-width: 0px 3px 0px 0px;
+    border-width: 0px 2px 0px 0px;
     border-style: solid;
     overflow: auto;
     justify-content: space-between;
@@ -42,12 +42,12 @@ body{
 }
 
 .text-field {
-    font-size: 150px;
+    font-size: 80px;
     /* width: 100%; */
     border: none;
     background-color: transparent;
     text-align: center;
-    font-family: 'chatbot_ilhee2222-Regular';
+    font-family: 'chatbot_ilhee22222-Regular';
 }
 
 input::placeholder{
@@ -75,7 +75,7 @@ textarea:focus, input:focus{
     margin-top: 10px;
     margin-bottom: 50px;
     width: 90%;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
     color: #000000;
     background-color: rgb(255, 255, 255);
@@ -98,7 +98,7 @@ textarea:focus, input:focus{
 
 .history .value{
     font-size: 45px;
-    font-family: 'chatbot_ilhee2222-Regular';
+    font-family: 'chatbot_ilhee22222-Regular';
 }
 
 .next-btn{
@@ -117,8 +117,8 @@ textarea:focus, input:focus{
     margin-right: 65px;
 }
 .next-btn img{
-    width: 114px;
-    height: 114px;
+    width: 80px;
+    height: 80px;
 }
 
 
@@ -128,7 +128,7 @@ textarea:focus, input:focus{
     display: inline-block;
     width: 369px;
     height: 114px;
-    border: solid 3px #000000;
+    border: solid 2px #000000;
     background-color: #ffffff;
     text-align: center;
     border-radius: 10%;
