@@ -2,13 +2,15 @@ html, body{
     margin: 0;
     height: 100%;
 }
+html{
+    /* cursor: url('/assets/cursor-01.png'), auto; */
+    cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
+}
 body{
     /* background-color: #fff105; */
     font-family: 'Poppins', sans-serif;
     display: flex;
-    /* justify-content: center; */
 }
-
 .left-field{
     background-color: #fff105;
     width: 86%;
@@ -16,7 +18,6 @@ body{
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
     border-color: #000000;    
     border-width: 0px 1px 0px 0px;
     border-style: solid;
@@ -24,33 +25,22 @@ body{
     justify-content: space-between;
 }
 
-.left-upper-field{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(255, 255, 255);
-    /* width: 1920px; */
-    flex-direction: column;
-}
+
 .Total-Question {
     /* width: 100px; */
     /* height: 133px; */
     display: inline-block;
-    
     font-size: 25px;
-    font-weight: normal;
-    line-height: 1;
-    letter-spacing: normal;
     color: #000000;
     margin-top: 1.5%;
     margin-left: 2.7%;
 
     /* 영역 테스트하기위해 임의로 skyblue색 깔았음 */
-    background-color: skyblue; 
-    /* width: 1920px; */
+    /* background-color: skyblue;  */
 }
 
 .Question{
-    margin-left: 4.6%;
+    margin-left: 2%;
 }
 
 .text-field {
@@ -72,9 +62,7 @@ textarea:focus, input:focus{
     outline: none;
 }
 
-.exit-btn{
-    /* position: absolute; */
-    /* z-index: 3; */ 
+/* .exit-btn{
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -83,13 +71,11 @@ textarea:focus, input:focus{
     border: none;
     cursor: pointer;
     border-radius: 50%;
-    /* margin-right: 65px; */
-    /* background-color: gray; */
 }
 .exit-btn img{
     width: 20px;
     height: 20px;
-}
+} */
 
 .right-field{
     overflow-x: hidden; 
@@ -159,5 +145,3 @@ textarea:focus, input:focus{
     width: 50px;
     height: 50px;
 }
-
-

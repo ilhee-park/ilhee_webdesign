@@ -5,8 +5,7 @@ let enter_flag = true;
 
 //맨 처음 질문 초기화하는 로직
 document.querySelector('.Question').textContent = "";
-
-//엔터눌러서 질문 위로 올리고 답변+"공백" 얻어내는 로직
+//엔터눌러서 질문 위로 올리고 답변 얻어내는 로직
 var input = document.querySelector('input');
 input.addEventListener('keyup', (e) => {
     if(e.keyCode === 13 && enter_flag == true){ //enter_flag써서 엔터한번만허용
@@ -15,14 +14,14 @@ input.addEventListener('keyup', (e) => {
         document.querySelector('.Question').textContent = e.target.value;//질문위로올리기
         document.getElementById("nextBtn").style.visibility="visible";//다음버튼 활성화
         document.querySelector('input').value = e.target.value;//답변은 질문으로 초기화
-        document.querySelector('input').style.fontFamily = "chatbot_ilhee_finalfinal-Regular"; 
+        document.querySelector('input').style.fontFamily = "chatbot_ilhee_finalfinal-Regular"; //이부분을 너가만든폰트를 바꾸세요^^
         console.log('플래그 체크!!', enter_flag);
 
         //prev-question배열에 저장
         previous_questions_lists.push({
             key_num: previous_questions_lists.length + 1,
             key: e.target.value,
-            value: e.target.value + ' '
+            value: e.target.value   
         });
         console.log("previously asked questions are : ", previous_questions_lists);
     }
@@ -50,13 +49,13 @@ go_next.addEventListener('click', () => {
 UpdateQuestionNumbers(previous_questions_lists);
 
 
-function onLoadUpdateQuestionNumbers(){//질문번호 초기화
-    let questionNumbers = localStorage.getItem('currentQuestionNumbers');
+// function onLoadUpdateQuestionNumbers(){//질문번호 초기화
+//     let questionNumbers = localStorage.getItem('currentQuestionNumbers');
 
-    if(questionNumbers){
-        document.querySelector('.Question-Number').textContent = questionNumbers;
-    }
-}
+//     if(questionNumbers){
+//         document.querySelector('.Question-Number').textContent = questionNumbers;
+//     }
+// }
 
 function UpdateQuestionNumbers(previous_questions_lists){//질문번호 초기화
     let questionNumbers = localStorage.getItem('currentQuestionNumbers');
@@ -72,16 +71,16 @@ function UpdateQuestionNumbers(previous_questions_lists){//질문번호 초기�
         document.querySelector('.Question-Number').textContent = 1;
     }
 }
-onLoadUpdateQuestionNumbers();
+// onLoadUpdateQuestionNumbers();
 
-
+//마지막list의 요소 key-value만 보여준다.
 function appendPrevQuestions(previous_questions_lists){
     //히스토리로 가져온다.
     var list_length = previous_questions_lists.length - 1;
     var temp_key_num = previous_questions_lists[list_length].key_num;
     var temp_key = previous_questions_lists[list_length].key;
     var temp_value = previous_questions_lists[list_length].value;
-    
+
     //새로 아래에 history div 만들기
     var make_history = document.createElement('div');
     make_history.classList.add('history');
@@ -100,7 +99,6 @@ function appendPrevQuestions(previous_questions_lists){
     make_history.appendChild(key_num);
     make_history.appendChild(key);
     make_history.appendChild(value);
-    // console.log('mh--?',make_history);
 
     document.getElementsByClassName('right-field')[0].appendChild(make_history);
 }
