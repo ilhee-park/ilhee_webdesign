@@ -4,7 +4,7 @@ html, body{
 }
 body{
     /* background-color: #fff105; */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     /* justify-content: center; */
 }
@@ -28,7 +28,7 @@ body{
     /* width: 100px; */
     /* height: 133px; */
     display: inline-block;
-    font-size: 127px;
+    font-size: 80px;
     font-weight: normal;
     line-height: 1;
     letter-spacing: normal;
@@ -42,16 +42,16 @@ body{
 }
 
 .text-field {
-    font-size: 250px;
+    font-size: 150px;
     /* width: 100%; */
     border: none;
     background-color: transparent;
     text-align: center;
-    font-family: '20201020_Poppins_demo1 Regular';
+    font-family: 'chatbot_ilhee2222-Regular';
 }
 
 input::placeholder{
-    font-size: 60px;
+    font-size: 20px;
 }
 
 textarea:focus, input:focus{
@@ -62,7 +62,7 @@ textarea:focus, input:focus{
     overflow: scroll;
 
     background-color: #ffffff;
-    width: 20%;
+    width: 22%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -72,16 +72,16 @@ textarea:focus, input:focus{
 
 .prev-question{
     /* display: block; */
-    margin-top: 44px;
+    margin-top: 10px;
     margin-bottom: 50px;
-    width: 100%;
-    font-size: 36px;
+    width: 90%;
+    font-size: 25px;
     font-weight: bold;
     color: #000000;
-    background-color: bisque;
+    background-color: rgb(255, 255, 255);
     /* text-align: center; */
     /* position: fixed; */
-    margin-left: none;
+    margin-left: 20px;
 }
 
 .history{
@@ -98,7 +98,7 @@ textarea:focus, input:focus{
 
 .history .value{
     font-size: 45px;
-    font-family: '20201020_Poppins_demo1 Regular';
+    font-family: 'chatbot_ilhee2222-Regular';
 }
 
 .next-btn{

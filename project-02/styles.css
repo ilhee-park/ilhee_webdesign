@@ -1,10 +1,16 @@
+
 body{
     background-color: #fff105;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    cursor: url('cursor-01.svg'), default;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    cursor: url('cursor-01.svg'), auto;
 }
 
+.cursor {
+    width: 20px;
+    height: 20px;
+}
 
 .LET-ME-INTRODUCT-MYSELF {
     width: 1550px;
