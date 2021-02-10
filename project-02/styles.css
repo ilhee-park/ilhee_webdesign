@@ -34,7 +34,9 @@ body{
     width: 1550px;
     height: 21.1%;
     margin-left: 2.7%;
-    font-size: 115px;
+    margin-top: 1.5%;
+    font-size: 25px;
+    font-weight: bold;
     text-align: left;
     color: #000000;
 }
@@ -47,12 +49,13 @@ body{
 .start-btn{
     display: flex;
     justify-content: center;
-    width: 200px;
-    height: 200px;
-    border: solid 3px #000000;
+    width: 130px;
+    height: 130px;
+    border: solid 1px #000000;
     background-color: #ffffff;
     text-align: center;
     border-radius: 50%;
+    margin-bottom: 180px;
     /* margin-right: auto;
     margin-left: auto; */
 }
@@ -61,11 +64,11 @@ button{
     color: #000;
     outline: none;
     border: none;
-    font-size: 50px;
+    font-size: 30px;
     letter-spacing: 1px;
     cursor: pointer;
-    width: 200px;
-    height: 200px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
 }
 a{
@@ -81,7 +84,7 @@ button:active{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 
 .vertical-align .key-lists ul{
@@ -93,10 +96,10 @@ button:active{
 .vertical-align .key-lists li{
     float: left;
     list-style: none;
-    font-size: 30px;
+    font-size: 15px;
 }
 
 /* 여기를 알아서 바꾸면됨 */
 .vertical-align .key-lists li:not(:last-child){ 
-    margin-right: 160px;
+    margin-right: 220px;
 }
