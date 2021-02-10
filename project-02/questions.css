@@ -18,12 +18,19 @@ body{
     flex-direction: column;
     align-items: stretch;
     border-color: #000000;    
-    border-width: 0px 2px 0px 0px;
+    border-width: 0px 3px 0px 0px;
     border-style: solid;
     overflow: auto;
     justify-content: space-between;
 }
 
+.left-upper-field{
+    display: flex;
+    justify-content: space-between;
+    background-color: thistle;
+    /* width: 1920px; */
+    flex-direction: column;
+}
 .Total-Question {
     /* width: 100px; */
     /* height: 133px; */
@@ -35,6 +42,10 @@ body{
     color: #000000;
     margin-top: 4.6%;
     margin-left: 52px;
+
+    /* 영역 테스트하기위해 임의로 skyblue색 깔았음 */
+    background-color: skyblue; 
+    /* width: 1920px; */
 }
 
 .Question{
@@ -42,20 +53,41 @@ body{
 }
 
 .text-field {
-    font-size: 80px;
+    font-size: 150px;
     /* width: 100%; */
     border: none;
     background-color: transparent;
     text-align: center;
-    font-family: 'chatbot_ilhee_finalfinal-Regular';
 }
 
 input::placeholder{
     font-size: 20px;
+    line-height: 1.5;
+    display: inline;
+    vertical-align: middle;
 }
 
 textarea:focus, input:focus{
     outline: none;
+}
+
+.exit-btn{
+    /* position: absolute; */
+    /* z-index: 3; */ 
+    display: inline-block;
+    width: 56.7px;
+    height: 56.7px;
+    color: #000;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    /* margin-right: 65px; */
+    /* background-color: gray; */
+}
+.exit-btn img{
+    width: 56.7px;
+    height: 56.7px;
 }
 
 .right-field{
@@ -67,7 +99,7 @@ textarea:focus, input:focus{
     display: flex;
     flex-direction: column;
     text-align: left;
-    /* margin-left: 50px; */
+    margin-left: 1.4%;
 }
 
 .prev-question{
@@ -75,13 +107,13 @@ textarea:focus, input:focus{
     margin-top: 10px;
     margin-bottom: 50px;
     width: 90%;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: bold;
     color: #000000;
     background-color: rgb(255, 255, 255);
     /* text-align: center; */
     /* position: fixed; */
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 .history{
@@ -96,9 +128,14 @@ textarea:focus, input:focus{
     flex-direction: column; */
 }
 
+.history .key{
+    text-transform: uppercase;
+    /* margin-left: 40px; */
+}
 .history .value{
     font-size: 45px;
-    font-family: 'chatbot_ilhee_finalfinal-Regular';
+    text-transform: uppercase;
+    font-family: 'chatbot_ilhee22222-Regular';
 }
 
 .next-btn{
@@ -117,45 +154,8 @@ textarea:focus, input:focus{
     margin-right: 65px;
 }
 .next-btn img{
-    width: 80px;
-    height: 80px;
-}
-
-
-.exit-btn{
-    position: relative;
-    top: 800px;
-    display: inline-block;
-    width: 369px;
-    height: 114px;
-    border: solid 2px #000000;
-    background-color: #ffffff;
-    text-align: center;
-    border-radius: 10%;
-    /* margin-right: auto;
-    margin-left: auto; */
-}
-/* #exitBtn{
-    background: none; 
-    color: #000;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    border-radius: 50%;
-} */
-.exit-btn img{
-    width: 369px;
+    width: 114px;
     height: 114px;
 }
 
-.exit-btn button{
-    background: #fff; 
-    color: #000;
-    outline: none;
-    border: none;
-    font-size: 45px;
-    cursor: pointer;
-    width: 369px;
-    height: 114px;
-    border-radius: 50%;
-}
+

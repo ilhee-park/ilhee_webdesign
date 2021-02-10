@@ -14,7 +14,8 @@ input.addEventListener('keyup', (e) => {
         console.log(e.target.value + '입력됨!!');
         document.querySelector('.Question').textContent = e.target.value;//질문위로올리기
         document.getElementById("nextBtn").style.visibility="visible";//다음버튼 활성화
-        document.querySelector('input').value = e.target.value + ' ';//답변은 질문+'공백'으로 초기화
+        document.querySelector('input').value = e.target.value;//답변은 질문으로 초기화
+        document.querySelector('input').style.fontFamily = "chatbot_ilhee22222-Regular"; //이부분을 폰트를 바꾸세요^^
         console.log('플래그 체크!!', enter_flag);
 
         //prev-question배열에 저장
@@ -26,6 +27,7 @@ input.addEventListener('keyup', (e) => {
         console.log("previously asked questions are : ", previous_questions_lists);
     }
     else{//엔터한번만허용하게끔 예외처리
+        document.querySelector('input').style.fontFamily = "Poppins";
         return;
     }
 })

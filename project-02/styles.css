@@ -1,10 +1,14 @@
-
+html, body{
+    height: 100%;
+}
 body{
     background-color: #fff105;
     box-sizing: border-box;
     overflow: hidden;
     font-family: 'Poppins', sans-serif;
     cursor: url('cursor-01.svg'), auto;
+    margin: 0;
+    height: 100%;
 }
 
 .cursor {
@@ -12,48 +16,40 @@ body{
     height: 20px;
 }
 
-.LET-ME-INTRODUCT-MYSELF {
-    width: 1550px;
-    height: 80px;
-    font-size: 80px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000000;
-    margin: 30px 60px 0px 30px;
+.vertical-align{
+    /* margin: 0 auto; */
+    /* position: absolute; */
+    /* top: 50%; */
+    /* transform: translateY(-25%); */
+    /* width: 100%; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
+
 
 .CHATBOT-ABOUT-ME {
-    /* width: 528px; */
-    height: 50px;
-    margin: 0px 10px 0px 30px;
-    font-size: 80px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: normal;
+    width: 1550px;
+    height: 21.1%;
+    margin-left: 2.7%;
+    font-size: 115px;
     text-align: left;
     color: #000000;
 }
 
-.vertical-align{
-    margin: 0 auto;
-    position: absolute;
-    top: 45%;
-    transform: translateY(-25%);
-    width: 100%;
+.start-btn-container{
+    /* width: 100%; */
     display: flex;
     justify-content: center;
 }
 .start-btn{
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    border: solid 2px #000000;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border: solid 3px #000000;
     background-color: #ffffff;
     text-align: center;
     border-radius: 50%;
@@ -65,11 +61,11 @@ button{
     color: #000;
     outline: none;
     border: none;
-    font-size: 30px;
+    font-size: 50px;
     letter-spacing: 1px;
     cursor: pointer;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
 }
 a{
@@ -80,4 +76,27 @@ a{
 
 button:active{
     background-color: #fff105;
+}
+.vertical-align .key-lists{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.vertical-align .key-lists ul{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin: 0;
+}
+.vertical-align .key-lists li{
+    float: left;
+    list-style: none;
+    font-size: 30px;
+}
+
+/* 여기를 알아서 바꾸면됨 */
+.vertical-align .key-lists li:not(:last-child){ 
+    margin-right: 160px;
 }
