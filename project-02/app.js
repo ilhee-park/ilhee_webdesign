@@ -1,14 +1,13 @@
-//PREVIOUS QUESTIONS 순차적으로 받은 목록
 let previous_questions_lists = [];
 var go_next = document.querySelector('#nextBtn');
 let enter_flag = true;
 
-//맨 처음 질문 초기화하는 로직
+//맨 처음 질문 초기화
 document.querySelector('.Question').textContent = "";
-//엔터눌러서 질문 위로 올리고 답변 얻어내는 로직
+//엔터눌러서 질문 위로 올리고 답변 받기
 var input = document.querySelector('input');
 input.addEventListener('keyup', (e) => {
-    if(e.keyCode === 13 && enter_flag == true){ //enter_flag써서 엔터한번만허용
+    if(e.keyCode === 13 && enter_flag == true){ //엔터한번만허용
         enter_flag = false;
         console.log(e.target.value + '입력됨!!');
         document.querySelector('.Question').textContent = e.target.value;//질문위로올리기
@@ -73,7 +72,7 @@ function UpdateQuestionNumbers(previous_questions_lists){//질문번호 초기�
 }
 // onLoadUpdateQuestionNumbers();
 
-//마지막list의 요소 key-value만 보여준다.
+
 function appendPrevQuestions(previous_questions_lists){
     //히스토리로 가져옴
     var list_length = previous_questions_lists.length - 1;
@@ -81,7 +80,7 @@ function appendPrevQuestions(previous_questions_lists){
     var temp_key = previous_questions_lists[list_length].key;
     var temp_value = previous_questions_lists[list_length].value;
 
-    //새로 아래에 history div 만들기
+    //history div 
     var make_history = document.createElement('div');
     make_history.classList.add('history');
 
