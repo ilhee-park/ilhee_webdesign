@@ -4,7 +4,7 @@ html, body{
 }
 html{
     /* cursor: url('/assets/cursor-01.png'), auto; */
-    cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;
+    cursor: url("cursor-01.png"), auto;
 }
 body{
     /* background-color: #fff105; */
@@ -35,8 +35,7 @@ body{
     margin-top: 1.5%;
     margin-left: 2.7%;
 
-    /* 영역 테스트하기위해 임의로 skyblue색 깔았음 */
-    /* background-color: skyblue;  */
+    
 }
 
 .Question{

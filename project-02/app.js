@@ -14,7 +14,7 @@ input.addEventListener('keyup', (e) => {
         document.querySelector('.Question').textContent = e.target.value;//질문위로올리기
         document.getElementById("nextBtn").style.visibility="visible";//다음버튼 활성화
         document.querySelector('input').value = e.target.value;//답변은 질문으로 초기화
-        document.querySelector('input').style.fontFamily = "chatbot_ilhee_finalfinal-Regular"; //이부분을 너가만든폰트를 바꾸세요^^
+        document.querySelector('input').style.fontFamily = "chatbot_ilhee_finalfinal-Regular"; 
         console.log('플래그 체크!!', enter_flag);
 
         //prev-question배열에 저장
