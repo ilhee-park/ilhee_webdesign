@@ -47,7 +47,7 @@ body{
     border: none;
     background-color: transparent;
     text-align: center;
-    font-family: 'chatbot_ilhee22222-Regular';
+    font-family: 'chatbot_ilhee_finalfinal-Regular';
 }
 
 input::placeholder{
@@ -98,7 +98,7 @@ textarea:focus, input:focus{
 
 .history .value{
     font-size: 45px;
-    font-family: 'chatbot_ilhee22222-Regular';
+    font-family: 'chatbot_ilhee_finalfinal-Regular';
 }
 
 .next-btn{
